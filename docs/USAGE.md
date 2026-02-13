@@ -53,10 +53,12 @@ flock --version 2>/dev/null || echo "flock not found"
 
 ## Installation
 
-Install the plugin from the Claude Code marketplace:
-
 ```bash
-claude plugin install macromanatlas
+# Add the marketplace
+claude plugin marketplace add MacroMan5/macromanatlas
+
+# Install the plugin
+claude plugin install macromanatlas@macromanatlas-marketplace
 ```
 
 This registers the plugin and its hooks. No additional configuration is needed.

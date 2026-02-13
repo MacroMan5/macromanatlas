@@ -115,7 +115,7 @@ Feature requests that align with the project's goals (keeping Claude oriented in
 ### Fork and Clone
 
 ```bash
-gh repo fork therouxe/macromanatlas --clone
+gh repo fork MacroMan5/macromanatlas --clone
 cd macromanatlas
 ```
 

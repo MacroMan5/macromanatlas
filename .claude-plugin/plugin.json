@@ -4,10 +4,10 @@
   "description": "Automatic codebase index + per-module READMEs for Claude Code (hooks + auto-sync).",
   "author": {
     "name": "therouxe",
-    "url": "https://github.com/therouxe"
+    "url": "https://github.com/MacroMan5"
   },
-  "homepage": "https://github.com/therouxe/macromanatlas",
-  "repository": "https://github.com/therouxe/macromanatlas",
+  "homepage": "https://github.com/MacroMan5/macromanatlas",
+  "repository": "https://github.com/MacroMan5/macromanatlas",
   "license": "MIT",
   "keywords": [
     "claude-code",

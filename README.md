@@ -29,13 +29,15 @@ See [docs/SUPPORTED-PROJECTS.md](docs/SUPPORTED-PROJECTS.md) for full detection 
 
 ## Installation
 
-Install from the Claude Code plugin marketplace:
-
 ```bash
-claude plugin install macromanatlas
+# Add the marketplace
+claude plugin marketplace add MacroMan5/macromanatlas
+
+# Install the plugin
+claude plugin install macromanatlas@macromanatlas-marketplace
 ```
 
-Or add via the marketplace UI.
+Or use the interactive TUI: `/plugin marketplace add MacroMan5/macromanatlas`
 
 ## Usage
 
