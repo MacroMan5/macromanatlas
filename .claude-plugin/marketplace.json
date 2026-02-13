@@ -1,0 +1,23 @@
+{
+  "name": "macromanatlas-marketplace",
+  "owner": {
+    "name": "therouxe"
+  },
+  "metadata": {
+    "description": "MacroManAtlas plugin marketplace",
+    "version": "1.0.0",
+    "homepage": "https://github.com/therouxe/macromanatlas"
+  },
+  "plugins": [
+    {
+      "name": "macromanatlas",
+      "source": "./",
+      "version": "1.0.0",
+      "description": "Automatic codebase index + per-module READMEs for Claude Code (hooks + auto-sync).",
+      "author": { "name": "therouxe" },
+      "keywords": ["claude-code", "claude-code-plugin", "code-index", "repository-index", "documentation", "developer-tools", "monorepo", "hooks"],
+      "category": "productivity",
+      "license": "MIT"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "macromanatlas",
+  "version": "1.0.0",
+  "description": "Automatic codebase index + per-module READMEs for Claude Code (hooks + auto-sync).",
+  "author": {
+    "name": "therouxe",
+    "url": "https://github.com/therouxe"
+  },
+  "homepage": "https://github.com/therouxe/macromanatlas",
+  "repository": "https://github.com/therouxe/macromanatlas",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "claude-code-plugin",
+    "code-index",
+    "repository-index",
+    "documentation",
+    "developer-tools",
+    "monorepo",
+    "hooks",
+    "auto-sync",
+    "module-readme"
+  ]
+}
