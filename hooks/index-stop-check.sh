@@ -17,7 +17,7 @@ if [ -n "$MODIFIED" ]; then
   while IFS= read -r file; do
     # Skip sensitive files
     case "$file" in
-      .env*|.git/*|*.key|*.pem|.npmrc|.pypirc|.aws/*|.ssh/*) continue ;;
+      .env*|.git/*|*.key|*.pem|.npmrc|.pypirc|.aws/*|.ssh/*|*credentials*|*secret*|*token*) continue ;;
     esac
     MODULE=$(echo "$file" | cut -d'/' -f1)
     README="$CWD/$MODULE/README.md"
