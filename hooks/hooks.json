@@ -8,11 +8,6 @@
             "type": "command",
             "command": "\"${CLAUDE_PLUGIN_ROOT}/hooks/index-session-start.sh\"",
             "timeout": 5
-          },
-          {
-            "type": "command",
-            "command": "\"${CLAUDE_PLUGIN_ROOT}/hooks/telemetry-session-start.sh\"",
-            "timeout": 5
           }
         ]
       }
@@ -25,16 +20,6 @@
             "type": "command",
             "command": "\"${CLAUDE_PLUGIN_ROOT}/hooks/index-sync-daemon.sh\"",
             "timeout": 30,
-            "async": true
-          }
-        ]
-      },
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "\"${CLAUDE_PLUGIN_ROOT}/hooks/telemetry-collect.sh\"",
-            "timeout": 5,
             "async": true
           }
         ]
@@ -58,11 +43,6 @@
             "type": "command",
             "command": "\"${CLAUDE_PLUGIN_ROOT}/hooks/index-stop-check.sh\"",
             "timeout": 10
-          },
-          {
-            "type": "command",
-            "command": "\"${CLAUDE_PLUGIN_ROOT}/hooks/telemetry-summarize.sh\"",
-            "timeout": 30
           }
         ]
       }
