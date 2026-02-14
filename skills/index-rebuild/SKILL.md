@@ -57,8 +57,9 @@ If full rebuild:
 Perform the same steps as `/index-init` Steps 2-4, but:
 - PRESERVE all `<!-- CUSTOM -->` sections in existing READMEs
 - PRESERVE the `<!-- CUSTOM -->` section in `.claude/index.md`
-- Do NOT re-add the CLAUDE.md section if it already exists
+- Do NOT re-add the CLAUDE.md section if it already exists (look for "Code Navigation" or "Code Index")
 - Do NOT modify hooks (they're managed by the plugin)
+- Regenerate the "How to Use" section in `.claude/index.md` with the navigation strategy (tags → README → targeted grep)
 
 ## Step 4: Report
 

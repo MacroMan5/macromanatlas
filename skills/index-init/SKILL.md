@@ -119,7 +119,8 @@ Full index file. Claude reads this on demand for details.
 Generated: <YYYY-MM-DD HH:MM> | Type: <project-type> | Modules: <count> | Files: <total-count>
 
 ## How to Use
-The summary is injected at session start. Read module READMEs for details.
+The summary is injected at session start. Read module READMEs for file-level detail.
+See CLAUDE.md "Code Navigation" section for the search strategy.
 
 ## Modules
 | Module | Purpose | Tags | README |
@@ -143,18 +144,20 @@ another-tag: Module3, Module4
 
 ## Step 5: Update CLAUDE.md
 
-Read the existing CLAUDE.md. If it already has a "Code Index" section, update it. Otherwise, append this section:
+Read the existing CLAUDE.md. If it already has a "Code Index" or "Code Navigation" section, update it. Otherwise, append this section:
 
 ```
-## Code Index
+## Code Navigation
 
-This project uses an auto-generated index for efficient code navigation.
-- **Summary**: `.claude/index.summary.md` — injected at session start (lightweight, <4KB)
-- **Full index**: `.claude/index.md` — complete module table, dependency graph, tag index
-- **Module docs**: Each module has a `README.md` with architecture, files, tags
-- **Auto-sync**: PostToolUse hook maintains the index in background
-- **Re-index**: Run `/index-init` to regenerate from scratch
-- **Usage**: Read the relevant module README before grepping source files
+When you need to search the codebase and don't already know the exact file:
+
+1. Read `.claude/index.md` → Tag Index to find which module(s) own the topic
+2. Read `<Module>/README.md` → exact file paths, classes, responsibilities
+3. Grep/glob within that module — not the whole repo
+
+Skip this if you already know the file path. This is for discovery, not mandatory ritual.
+
+Index files: `.claude/index.md` (full), `.claude/index.summary.md` (session start), `<Module>/README.md` (per-module). Re-index: `/index-init`
 ```
 
 ## Step 6: Handle `--gitignore` flag
